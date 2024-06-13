@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function CardItem({ strMeal, img }) {
+export default function Card({ strMeal, img }) {
   return (
     <div className='card'>
       <div className="card-img">

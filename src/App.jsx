@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardItem from "./components/Card/Card";
+import Card from "./components/Card/Card";
 
 export default function App() {
   const [foods, setFoods] = useState([]);
@@ -25,7 +25,7 @@ export default function App() {
       <main className="container">
         <div className="foods-grid">
           {foods.map((food, index) => (
-            <CardItem
+            <Card
               key={food.id + index}
               strMeal={food.strMeal}
               img={food.strMealThumb}
