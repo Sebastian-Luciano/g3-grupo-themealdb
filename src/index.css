@@ -1,3 +1,69 @@
+:root {
+    --principal:#51736d;
+    --secundario: #2c4d47;
+}
+
+.contenedor-categorias {
+    padding: 1rem 0;
+    width: 300px;
+    background-color: #51736d;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor-categorias h2 {
+    text-align: center;
+}
+
+/* buscador */
+.contenedor-categorias input{
+    width: 210px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
+
+.lupa {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 0.1rem;
+    background-color: var(--principal);
+    font-size: larger;
+    text-shadow: white 2px 2px 15px;
+    cursor: pointer;
+}
+
+.lupa:hover {
+    background-color: var(--secundario);
+}
+
+
+.btn-categoria {
+    display: flex;
+    border: none;
+    width: 250px;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background-color: var(--principal);
+}
+
+.categoria-img{
+    padding: 0;
+    margin: 0.5rem 0;
+}
+.categoria-img img {
+    width: 45px;
+}
+
+.btn-categoria:hover {
+    background-color: #2c4d47;
+    color: aliceblue;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
