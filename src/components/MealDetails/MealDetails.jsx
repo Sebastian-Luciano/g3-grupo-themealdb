@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 export default function MealDetails() {
+    const {category} = useParams();
     const [meals, setMeals] = useState([]); // Inicializar como un array
 
     async function getData() {
