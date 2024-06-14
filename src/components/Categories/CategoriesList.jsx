@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CateogoriesItem from './CateogoriesItem';
 
-export default function categories() {
+export default function CategoriesList() {
     const [data, setData] = useState([])
     const [search, setSearh] = useState({categoria: ''})
 
@@ -22,7 +22,6 @@ export default function categories() {
         )
 
         setComida(dataRs)
-
         setData(dataRs)
     }
 
@@ -42,11 +41,12 @@ export default function categories() {
     }, [])
 
   return (
-    <>
+    
     <div className='contenedor-categorias'>
         <h2>Meals</h2>
         <input type="text" placeholder='Search Category' value={search.categoria}
         onChange={(e) => setSearh({ ...search, categoria: e.target.value})}/>
+        
         <button className='lupa' onClick={search_categories}>🔍</button>
         <div>
             {comidas &&
@@ -58,6 +58,6 @@ export default function categories() {
                 )}
         </div>
     </div>
-    </>
+    
   )
 }
