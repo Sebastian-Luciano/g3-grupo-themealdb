@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card/Card";
+import CategoriesList from './components/Categories/CategoriesList'
 
 export default function App() {
   const [foods, setFoods] = useState([]);
@@ -22,6 +23,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <CategoriesList/>
       <main className="container">
         <div className="foods-grid">
           {foods.map((food, index) => (
