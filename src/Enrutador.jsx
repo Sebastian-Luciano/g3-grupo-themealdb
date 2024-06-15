@@ -6,9 +6,9 @@ import Card from './components/Card/Card'
 export default function Enrutador() {
   return (
     <Routes>
-        <Route path='/' element={<h1>Hola mundo</h1>}/>
-        <Route path='/meals/:category' element={<Card/>}/>
-        <Route path='/' element={<MealDetails/>}/>
-        </Routes>
+      <Route path='/' element={<Card showAll />} />
+      <Route path='/meals/:category' element={<Card />} />
+      <Route path='/meal/:id' element={<MealDetails />} />
+    </Routes>
   )
 }
