@@ -12,7 +12,6 @@ export default function App() {
 
       <CategoriesList />
       <main className="container">
-        <Card />
         <Enrutador />
       </main>
 
